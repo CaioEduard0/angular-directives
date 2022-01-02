@@ -1,0 +1,33 @@
+<h5>Directive *ngIf*</h5>
+
+<div *ngIf="courses.length > 0">
+    Courses list here!
+</div>
+<div *ngIf="courses.length == 0">
+    Don't have courses to be shown!
+</div>
+<br>
+<div *ngIf="showCourses">
+    Courses list here!
+</div>
+<div *ngIf="!showCourses">
+    Don't have courses to be shown!
+</div>
+<br>
+<button (click)="onShowCourses()">
+    Show or hide courses.
+</button>
+<br>
+<br>
+<h5>Hidden as a alternative</h5>
+<div [hidden]="!showCourses">
+    Courses list here!
+</div>
+<div [hidden]="showCourses">
+    Don't have courses to be shown!
+</div>
+<br>
+<br>
+
+
+

@@ -1,0 +1,19 @@
+<hr>
+<h5>Directive *ngClass*</h5>
+<br>
+<button class="btn" 
+[class.btn-primary]="!myFavorite"
+[class.btn-success]="myFavorite"
+(click)="onClick()">Click!</button>
+<br>
+<br>
+<button class="btn" 
+[ngClass]="{
+    'btn-primary': !myFavorite,
+    'btn-success': myFavorite
+}"
+(click)="onClick()">Click!</button>
+<br>
+<br>
+
+

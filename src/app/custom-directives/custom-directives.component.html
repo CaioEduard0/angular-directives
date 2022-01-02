@@ -1,0 +1,26 @@
+<hr>
+<h5>Custom directives</h5>
+<br>
+<p appYellowBackground>Text with yellow background.</p>
+<br>
+<button appYellowBackground>Button with yellow background</button>
+<br>
+<br>
+<p appMouseHighlight>Highlight text when mouse over</p>
+<br>
+<br>
+<p appHighlight [colorDefault]="'grey'" [highlightColor]="'red'">
+    Highlight text with custom colors
+</p>
+<br>
+<div *ngIf="showCourses">
+    Courses list here!
+</div>
+<div *ngElse="showCourses">
+    Don't have courses to be shown!
+</div>
+<br>
+<button (click)="onShowCourses()">
+    Show or hide courses.
+</button>
+
